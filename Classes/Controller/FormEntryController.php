@@ -225,7 +225,7 @@ class FormEntryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 			->andWhere($queryBuilder->expr()->eq('exported', $queryBuilder->createNamedParameter(1, \PDO::PARAM_INT)))
 			->execute()->fetchAll();
         //DebuggerUtility::var_dump($count);
-        $this->view->assign('count', $count[0]);
+		$this->view->assign('count', $count[0]['COUNT(*)']);
     }
 
     /**
