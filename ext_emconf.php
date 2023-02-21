@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Forms Export',
+    'title' => 'Forms Export d&d',
     'description' => 'Adds the possibility, as a finisher, to save and export the form entries from customers',
     'category' => 'module',
     'author' => '!frappant',
