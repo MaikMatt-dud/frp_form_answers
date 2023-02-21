@@ -53,7 +53,7 @@
 			</trans-unit>
 			<trans-unit id="flashmessage.removeEntries.body">
 				<source>The deleted entries on Page %s have been ultimately deleted.</source>
-				<target>Die gelöschten Einträge der Seite %s wurden entgültig entfernt.</target>
+				<target>Die exportierten Einträge der Seite %s wurden entgültig entfernt.</target>
 			</trans-unit>
 			<trans-unit id="deleteFormName.confirmation.title">
 				<source>Really delete form entries</source>
@@ -65,7 +65,7 @@
 			</trans-unit>
 			<trans-unit id="countDeletedEntries">
 				<source>There are %s deleted entries to remove</source>
-				<target>Es gibt %s gelöschte Einträge, die Sie entfernen können.</target>
+				<target>Es gibt %s exportierte Einträge, die Sie entfernen können.</target>
 			</trans-unit>
 			<trans-unit id="removeDeletedEntries">
 				<source>Ultimate delete form entries</source>
