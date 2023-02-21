@@ -239,7 +239,7 @@ class FormEntryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 
         $queryBuilder->delete('tx_frpformanswers_domain_model_formentry')
             ->where($queryBuilder->expr()->eq('pid', $queryBuilder->createNamedParameter(\Frappant\FrpFormAnswers\Utility\BackendUtility::getCurrentPid(), \PDO::PARAM_INT)))
-            ->andWhere($queryBuilder->expr()->eq('deleted', $queryBuilder->createNamedParameter(1, \PDO::PARAM_INT)))
+			->andWhere($queryBuilder->expr()->eq('exported', $queryBuilder->createNamedParameter(1, \PDO::PARAM_INT)))
             ->execute();
 
         $this->addFlashMessage(
