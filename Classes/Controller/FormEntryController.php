@@ -153,10 +153,8 @@ class FormEntryController extends ActionController
         $count = $queryBuilder->count('*')
             ->from('tx_frpformanswers_domain_model_formentry')
             ->where($queryBuilder->expr()->eq('pid', $queryBuilder->createNamedParameter($this->pid, \PDO::PARAM_INT)))
-            //->andWhere($queryBuilder->expr()->eq('deleted', $queryBuilder->createNamedParameter(1, \PDO::PARAM_INT)))
-			->andWhere($queryBuilder->expr()->eq('exported', $queryBuilder->createNamedParameter(1, \PDO::PARAM_INT)))
-            //->execute()->fetchFirstColumn();
-			->execute()->fetchAll();
+            ->andWhere($queryBuilder->expr()->eq('deleted', $queryBuilder->createNamedParameter(1, \PDO::PARAM_INT)))
+            ->execute()->fetchFirstColumn();
         //DebuggerUtility::var_dump($count);
         $this->view->assign('count', $count[0]);
 
